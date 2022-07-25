@@ -1,0 +1,26 @@
+###
+GET http://localhost:3000/api/employees
+###
+POST http://localhost:3000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Rocio Arcodia",
+    "position": "Bioquimica",
+    "office": "Laboraorio",
+    "salary": "30000"
+}
+
+###
+GET http://localhost:3000/api/employees/62dda20f640aa342030b4515
+
+###
+DELETE http://localhost:3000/api/employees/62dda1c5640aa342030b4512
+
+###
+PUT http://localhost:3000/api/employees/62dda20f640aa342030b4515
+Content-Type: application/json
+
+{
+    "salary": "40000"
+}
